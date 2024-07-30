@@ -122,11 +122,10 @@
                                                             <label class="col-sm-2 col-form-label" for="content_{{ $language }}">Xəbər
                                                                 Yazısı</label>
                                                             <div class="col-sm-10">
-                                                                <textarea name="content_{{ $language }}"
-                                                                          @if($language == 'az') required @endif
-                                                                          id="content_{{ $language }}">@if(isset($news))
-                                                                        {!! $news->getTranslation('content',$language) !!}
-                                                                    @endif</textarea>
+                                                               <textarea name="content_{{ $language }}"
+                                                               id="content_{{ $language }}">@if(isset($news))
+                                                               {!! $news->getTranslation('content',$language) !!}
+                                                               @endif</textarea>
                                                             </div>
                                                         </div>
                                                     </div>
